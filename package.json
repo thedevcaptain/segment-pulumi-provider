@@ -9,7 +9,6 @@
     "schema.d.ts"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "prepare": "install-peers -f && npm run build",
     "prepack": "rm ./segment-pulumi-provider-0.0.1.tgz && npm run build"
