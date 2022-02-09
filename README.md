@@ -11,7 +11,7 @@ This is a Pulumi Dynamic Provider to operate on Twilio Segments Configurations A
 
 ## Changelog
 
-Please refer to [CHANGELOG.md](https://github.com/thedevcaptain/interfejs/blob/master/CHANGELOG.md) for release-to-release detail.
+Please refer to [CHANGELOG.md](https://github.com/thedevcaptain/segment-pulumi-provider/blob/master/CHANGELOG.md) for release-to-release detail.
 
 ## Pre-requisite
 - Pulumi CLI (ˆ3.0.0)
@@ -33,3 +33,17 @@ This package has a `peerDependency`, so you need to install it:
 ```
 npm install @pulumi/pulumi
 ```
+
+## Contributing
+
+1. Fork it (https://github.com/thedevcaptain/segment-pulumi-provider/fork)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+## About me
+
+I'm Francesco Borrelli an Italian Software Engineer, I love coding, solving problems and pizza so feel free contact me about anything :facepunch:
+[Email](mailto:borrellifrn@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/francesco-borrelli1)
