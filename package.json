@@ -1,0 +1,40 @@
+{
+  "name": "segment-pulumi-provider",
+  "version": "0.0.1",
+  "description": "Pulumi dynamic provider for Twilio Segment Configurations",
+  "main": "dist/index.js",
+  "types": "schema.d.ts",
+  "files": [
+    "dist/**/*",
+    "schema.d.ts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "install-peers -f && npm run build",
+    "prepack": "rm ./segment-pulumi-provider-0.0.1.tgz && npm run build"
+  },
+  "peerDependencies": {
+    "@pulumi/pulumi": "^3.0.0"
+  },
+  "keywords": [
+    "segment",
+    "pulumi",
+    "twilio",
+    "ci/cd",
+    "infra-as-code",
+    "IaC",
+    "automation"
+  ],
+  "author": "Francesco Borrelli <borrellifrn@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "install-peers-cli": "^2.2.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "dotenv": "^16.0.0"
+  }
+}
