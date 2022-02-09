@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsc",
     "prepare": "install-peers -f && npm run build",
-    "prepack": "rm ./segment-pulumi-provider-0.0.1.tgz && npm run build"
+    "prepack": "npm run build"
   },
   "peerDependencies": {
     "@pulumi/pulumi": "^3.0.0"
