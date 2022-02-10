@@ -8,14 +8,22 @@ interface SegmentSourceProviderInputs {
 }
 
 export class SegmentSourceProvider implements pulumi.dynamic.ResourceProvider {
+  async diff(
+    id: string,
+    old: SegmentSourceProviderInputs,
+    news: SegmentSourceProviderInputs
+  ): Promise<pulumi.dynamic.DiffResult> {
+    return {
+      changes: old.name !== news.name || old.catalog_name !== news.catalog_name,
+      deleteBeforeReplace: true,
+    };
+  }
   async delete(id: string, props: SegmentSourceProviderInputs) {
     const client = getSegmentClient();
-    console.log(`/${props.name}`);
     try {
       await client.delete(`/${props.name}`);
     } catch (e: any) {
       if (e.isAxiosError) {
-        console.log(e.request.url);
         console.error(e.response.data);
         throw new Error(e.response.data);
       }

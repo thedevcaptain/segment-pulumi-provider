@@ -6,7 +6,6 @@ This is a Pulumi Dynamic Provider to operate on Twilio Segments Configurations A
 [![GitHub last commit](https://img.shields.io/github/last-commit/thedevcaptain/segment-pulumi-provider.svg)](https://github.com/PirataFrancis/segment-pulumi-provider/commits/main)
 
 ## Next in Line
-- Update Source
 - CRUD on Destinations
 
 ## Changelog

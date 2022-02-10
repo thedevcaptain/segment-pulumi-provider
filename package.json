@@ -1,6 +1,6 @@
 {
   "name": "segment-pulumi-provider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pulumi dynamic provider for Twilio Segment Configurations",
   "main": "dist/index.js",
   "types": "schema.d.ts",
