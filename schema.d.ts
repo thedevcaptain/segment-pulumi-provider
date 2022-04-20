@@ -2,7 +2,7 @@ interface APIError {
   error: string;
   code: number;
 }
-export interface Source {
+interface Source {
   name: string;
   parent: string;
   display_name: string;
@@ -14,7 +14,7 @@ export interface Source {
   create_time: string;
   catalog_name: string;
 }
-export interface SourceLibraryConfig {
+interface SourceLibraryConfig {
   metrics_enabled: boolean;
   retry_queue: boolean;
   cross_domain_id_enabled: boolean;

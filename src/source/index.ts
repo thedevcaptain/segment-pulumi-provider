@@ -1,6 +1,5 @@
 import * as pulumi from "@pulumi/pulumi";
 import { SegmentSourceProvider } from "./provider";
-import { SourceLibraryConfig } from "../../schema";
 
 interface SourceInput {
   name: string;
